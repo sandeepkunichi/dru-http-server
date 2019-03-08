@@ -1,15 +1,15 @@
 package com.dru
 
-import scala.concurrent.{Await, ExecutionContext, Future}
+import scala.concurrent.{ Await, ExecutionContext, Future }
 import scala.concurrent.duration.Duration
-import scala.util.{Failure, Success}
-import akka.actor.{ActorRef, ActorSystem}
+import scala.util.{ Failure, Success }
+import akka.actor.{ ActorRef, ActorSystem }
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.server.Route
 import akka.stream.ActorMaterializer
-import com.dru.api.{SensorRegistryActor, SensorRoutes}
+import com.dru.api.{ SensorRegistryActor, SensorRoutes }
 
-object QuickstartServer extends App with SensorRoutes {
+object DruSensorServer extends App with SensorRoutes {
 
   implicit val system: ActorSystem = ActorSystem("druReadingsServer")
   implicit val materializer: ActorMaterializer = ActorMaterializer()

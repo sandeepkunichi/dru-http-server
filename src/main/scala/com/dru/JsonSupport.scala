@@ -1,7 +1,7 @@
 package com.dru
 
 import com.dru.api.SensorRegistryActor.ActionPerformed
-import com.dru.api.{Reading, Readings}
+import com.dru.api.{ Reading, Readings }
 import spray.json.RootJsonFormat
 
 import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport
